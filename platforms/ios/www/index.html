@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+    
+<!-- PAGES -->
+        
+        <section data-role="page" id="people" class="current">
+            <header class="page_header">
+                <img src="img/People.svg">
+                <h2 class="page_label">People</h2>
+                <button class="btn" id="add_people">Add</button>
+            </header>
+            <div class="content">
+                <ul class="list" id="people_list">
+                </ul>
+            </div>
+        </section>
+        <section data-role="page" id="occasions">
+            <header class="page_header">
+                <img src="img/Occasion.svg">
+                <h2 class="page_label">Occasions</h2>
+                <button class="btn" id="add_occasion">Add</button>
+            </header>
+            <div class="content">
+                <ul class="list" id="occasion_list">
+                  
+                </ul>
+            </div>
+        </section>
+        
+        <section data-role="page" id="gift_by_person">
+            <header class="page_header">
+                <img src="img/Gift.svg">
+                <h2 class="page_label">Gifts by Person</h2>
+                <button class="btn" id="add_gift_people">Add</button>
+            </header>
+            <div class="content">
+                <ul class="list" id="gift_list">
+                  
+                </ul>
+            </div>
+        </section>
+        
+        <section data-role="page" id="gift_by_occasion">
+            <header class="page_header">
+                <img src="img/Gift.svg">
+                <h2 class="page_label">Gifts by Occasion</h2>
+                <button class="btn" id="add_gift_occasion">Add</button>
+            </header>
+            <div class="content">
+                <ul class="list" id="gift_occasion_list">
+                  
+                </ul>
+            </div>
+        </section>
+        
+<!-- DIALOGS -->
+        
+        <section data-role="dialog" class="dlg_input" id="dlg">
+            <div class="dialog_wrapper">
+                <header class="dialog_header">
+                    <h2 class="dialog_label">Label</h2>
+                </header>
+                <div class="dialog_content">
+                    <input type="text" id="input_person" placeholder="Enter name">
+                    <div class="btn_group">
+                        <button class="dlg_btn" id="btn_cancel">Cancel</button>
+                        <button class="dlg_btn" id="btn_save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section data-role="dialog" class="dlg_select" id="dlg1">
+            <div class="dialog_wrapper">
+                <header id="dialog_header">
+                    <h2 id="dialog_label"></h2>
+                </header>
+                <div class="dialog_content">
+                    <input type="text" id="input_person1" placeholder="Enter name">
+                    <select class="dlg_select" id="events">
+                        
+                    </select>
+                    
+                    <div class="btn_group">
+                        <button class="dlg_btn" id="btn_cancel1">Cancel</button>
+                        <button class="dlg_btn" id="btn_save1">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/hammer-min.js"></script>
+        
+    <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
