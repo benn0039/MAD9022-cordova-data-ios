@@ -1,14 +1,5 @@
 /*jslint devel: true, evil: false, plusplus: true, sloppy: true, white: true, indent: 4*/
 
-/*by far the worst, hackiset code I've ever written... what happens when there isn't enough time to actually consider the design.
-Could have used classes... would have made this much easier
-This is by far the most embarrasing work ever.... OMG
-
-April 8 - This could be so much smaller if I'd really given some thought to how it would work.  
-        - Need to use the hammer manager I guess
-
-*/
-/*
     [] add dialog listeners
     [] logic
     [] database stuff
